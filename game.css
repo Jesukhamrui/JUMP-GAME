@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700;1,800&family=Stylish&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	overflow-x: hidden;
+	font-family: 'Stylish', sans-serif;
+}
+
+.bg{
+   
+	width:1000px;
+	height:500px;
+	border: 1px solid black;
+	margin: auto;
+	position:absolute;
+	margin-left: 25%;
+	top:200;
+	border: 10px solid blue;
+}
+
+#can{
+	border:1px solid #000000;
+	position:absolute;
+	margin-left: 25%;
+	top:200;
+	border: 10px solid blue;
+}
+
+.surface{
+	background: url(IMG/bg.png);
+	background-repeat: repeat-x;
+	width:500%;  
+	height:100%;
+	display: block;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	animation: moving 15s infinite linear;
+    animation-play-state: running;
+}
+
+@keyframes moving{
+	100%{transform: translateX(-3217px)}
+	}
+
+
+h1{
+	font-size: 2em;
+	bottom: 10px;
+	position: absolute;
+	left: 90%;
+}
+
+#M{
+	display: none;
+}
+
+.AboutGame {
+  color:#311FF9;
+  font-size: 50px;
+  position: absolute; 
+  top:50px; 
+  left:36%;
+  font-size: 6em;
+}
+
+button:hover{
+  background-color: #6388c2;
+}
+
+.button1 {
+    background-color : #34568B;
+	border: ridge;
+	border-color: black;
+	color:black;
+	padding:50px;
+	text-align:center;
+	display: inline-block;
+	font-size:50px;
+	margin-size:10px 5px;
+	cursor:pointer;
+}
+.button1 {border-radius: 50%;}
+
+
+.button2 {
+    background-color :#34568B;
+	border: ridge;
+	border-color: black;
+	color:black;
+	padding:20px;
+	text-align:center;
+	display: inline-block;
+	font-size:50px;
+	margin-size:5px 5px;
+	cursor:pointer;
+}
+
+.button2 {border-radius: 50%;}
+
+#Playbutton{
+	position: absolute; 
+	top:30%; 
+	left:46%;
+}
+
+#Replay{
+   position: absolute; 
+   top:450px; 
+   left:49%;
+}
+
+.Game_button{
+   display:none;
+}
+
+@media only screen and (max-width:1200px){
+
+.bg{
+	margin-left: 0;
+	top: 500;
+	border:0;
+}
+
+#can{
+	margin-left: 0;
+	top: 500;
+	border: 0;
+}
+
+
+#Playbutton{
+	left:40%;
+	top: 600;
+}
+
+.AboutGame {
+	top: 350;
+	left: 220;
+}
+
+#Replay{
+	top: 750;
+	left: 46%;
+}
+
+.Game_button{
+ position: absolute;
+ top: 1100;
+ width: 80%;
+ margin:0% 11%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.GButtons{
+ padding:50px;
+ font-size: 5em;
+ padding: 20px;
+ margin: 50 50px 50px;
+ background-color: #4E7DE2;
+  color: #fff;
+ border-radius: 40px;
+}
+
+.GButtons:active {
+  background-color: #FF0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#C{
+	display: none;
+}
+
+#M{
+	display: block;
+	left: 25%;
+	top: 75%;
+}
+
+}
